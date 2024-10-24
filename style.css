@@ -1,0 +1,399 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styling */
+header {
+    background-color: transparent;  /* Fond transparent */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* Assure que le header reste au-dessus du contenu */
+    width: 100%;
+    backdrop-filter: blur(10px);  /* Effet flou pour un rendu plus élégant */
+}
+
+/* Nav Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #d9b3ff;  /* Couleur de survol */
+}
+
+/* Buttons for Login and Signup */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-right: 10px;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #9d4edd;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: #9d4edd;
+}
+
+.signup-btn:hover {
+    background-color: #c18af8;
+    color: white;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+}
+
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9d4edd;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button Styling in Hero Section */
+.cta-btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn.primary {
+    background-color: white;
+    color: #9d4edd;
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-btn.primary:hover {
+    background-color: #c18af8;
+    color: white;
+}
+
+.cta-btn.secondary:hover {
+    background-color: white;
+    color: #9d4edd;
+}
+
+/* Hero Image Styling */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);  /* Zoom léger au survol */
+}
+
+/* Features Section */
+.features {
+    background-color: #ffffff;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-card {
+    text-align: center;
+    width: 30%;
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #777;
+}
+/* Style général pour les cards */
+.feature-card, .trip-card, .group-card, .guide-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    max-width: 300px;
+}
+
+/* Effet au survol */
+.feature-card:hover, .trip-card:hover, .group-card:hover, .guide-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Style pour les icônes */
+.feature-card i, .group-card i, .guide-card i {
+    font-size: 3rem;
+    color: #9d4edd;  /* Couleur violette pour les icônes */
+    margin-bottom: 15px;
+}
+
+/* Style pour les titres */
+.feature-card h3, .trip-card h3, .group-card h3, .guide-card h4 {
+    font-size: 1.5rem;
+    color: #ff66a0;  /* Couleur rose pour les titres */
+    margin-bottom: 10px;
+}
+
+/* Style pour les descriptions */
+.feature-card p, .trip-card p, .group-card p, .guide-card p {
+    font-size: 1rem;
+    color: #666;  /* Couleur grise pour le texte */
+}
+
+/* Style pour les sections */
+.features, .featured-trips, .group-travel, .local-guides {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.features h2, .featured-trips h2, .group-travel h2, .local-guides h2 {
+    font-size: 2rem;
+    color: #6b2ed5;  /* Couleur violette pour les titres principaux */
+    margin-bottom: 30px;
+}
+
+/* Disposition en grille pour les cards */
+.feature-grid, .trip-slider, .group-options, .guide-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Bouton pour les trip cards */
+.trip-card a.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff66a0;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.trip-card a.btn:hover {
+    background-color: #e0558c;
+}
+
+/* Style pour les évaluations des guides */
+.rating i {
+    color: #ffd700; /* Couleur or pour les étoiles */
+}
+
+/* Images des trip-cards et guide-cards */
+.trip-card img, .guide-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+/* Style général pour la section CTA */
+.cta-section {
+    background-color: #9d4edd;  /* Violet similaire à l'image */
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Style pour le titre */
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style pour le texte */
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Style pour le bouton CTA */
+.cta-btn {
+    padding: 15px 30px;
+    background-color: white;
+    color: #9d4edd;  /* Couleur du texte en violet */
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet au survol pour le bouton */
+.cta-btn:hover {
+    background-color: #c18af8;  /* Couleur plus claire au survol */
+    color: white;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    vertical-align: middle;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links ul li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
