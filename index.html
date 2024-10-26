@@ -19,15 +19,17 @@
                     LeapTrip
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#plan">Plan</a></li>
+                    <li><a href="#plan">Plan</a></li>       
+                    <!-- Maybe these can lead to different pages later, but it is good for now -->
                     <li><a href="#trips">Trips</a></li>
                     <li><a href="#explore">Explore</a></li>
                     <li><a href="#groups">Groups</a></li>
                     <li><a href="#guides">Local Guides</a></li>
                 </ul>
                 <div class="nav-buttons">
-                    <a href="#login" class="login-btn">Login</a>
-                    <a href="#signup" class="signup-btn">Register</a>
+                    <a id = "login_btn" href="#login" class="login-btn">Login</a> 
+                    <!-- I (Tony) added an id to thesebc idk how else to do stuff in js. I wanted to make it print an alert when I pressed this button -->
+                    <a id = "signup_btn" href="#signup" class="signup-btn">Register</a>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -186,7 +188,9 @@
                 © 2023 LeapTrip. All rights reserved.
             </div>
         </footer>
-        <script src="/script.js?v=2"></script>
+        <!-- <script src="/script.js?v=2"></script> --> 
+         <!-- I commented out the above and had the script for this page be the main.js file. IDK if this is how you're supposed to do it -Tony -->
+        <script src="main.js"></script>
     
     </body>
 </body>
