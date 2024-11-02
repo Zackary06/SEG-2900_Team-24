@@ -455,6 +455,16 @@ footer {
     text-decoration: none;
     font-weight: bold;
   }
+  .linkedin{
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  .mail-img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
   
   .header .navigation a:hover {
     text-decoration: underline;
