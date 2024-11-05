@@ -397,3 +397,84 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
+
+
+
+/*About Us page*/
+
+#team .team-member a {
+    color: #B07CFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #team .team-member a:hover {
+    color: #B07CFF;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  #team .team-member .photo {
+    float: left;
+    width: 20%;
+  }
+  
+  #team .team-member .photo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  #team .team-member .writeup {
+    float: right;
+    width: 80%;
+  }
+  
+  .clear-floats {
+    clear: both;
+  }
+  
+  .header {
+    background-color: #4B0082;
+    padding: 20px 0;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .logo img {
+    height: 50px;
+  }
+  
+  .header .navigation a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .linkedin{
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  .mail-img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .header .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    padding: 50px 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
