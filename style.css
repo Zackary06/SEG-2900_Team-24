@@ -18,13 +18,14 @@ a {
 
 /* Header Styling */
 header {
-    background-color: transparent;  /* Fond transparent */
+    background-color: #9d4edd;  /* Fond transparent */
     padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;  /* Assure que le header reste au-dessus du contenu */
     width: 100%;
     backdrop-filter: blur(10px);  /* Effet flou pour un rendu plus élégant */
+    
 }
 
 /* Nav Styling */
